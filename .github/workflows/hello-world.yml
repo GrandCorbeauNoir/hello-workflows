@@ -1,0 +1,13 @@
+name: Hello Workflows
+
+on:
+    push:
+
+jobs:
+  hello:
+    runs-on: unbuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello Workflows"
+      - name: Print another message
+        run: echo "There can be only one"
