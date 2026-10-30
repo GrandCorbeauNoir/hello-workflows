@@ -1,13 +1,11 @@
-name: Hello Workflows
+name: Hello World Workflow
 
 on:
-    push:
+  push:
 
 jobs:
-  hello:
-    runs-on: unbuntu-latest
+  say-hello:
+    runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "Hello Workflows"
-      - name: Print another message
-        run: echo "There can be only one"
+      - name: Print a message
+        run: echo "Hello from GitHub Actions!"
